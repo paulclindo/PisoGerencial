@@ -1,0 +1,405 @@
+// VARIABLES OF COLORS 
+$color-primary: #F1E329;
+$color-complementary: #BABABE;
+
+$color-black: #333333;
+$color-white: #F7F7F7;
+
+$font-size: 16px;
+
+$font-family-regular: 'Karla',
+sans-serif;
+$font-raleway: "Raleway",
+sans-serif;
+
+
+$font-family-bold: 'Karla',
+sans-serif;
+
+$background-image: url(https://images.pexels.com/photos/2887582/pexels-photo-2887582.jpeg?cs=srgb&dl=airplane-architectural-design-architecture-2887582.jpg&fm=jpg);
+
+
+
+// STANDAR STYLE FOR LANDING PROGRAMS
+
+@import url('https://fonts.googleapis.com/css?family=Karla&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font-family-bold;
+}
+
+span {
+  color: $color-white;
+  width: 100px;
+}
+
+a {
+  color: $color-black;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 3.2em;
+  font-weight: bolder;
+  margin: 0;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.5em;
+  margin-bottom: 0;
+}
+
+form {
+  margin-top: 1.5em;
+}
+
+input[type="text"] {
+  background: white;
+  padding: 1em 1.5em;
+  width: 70%;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+
+  &:focus {
+    background: #edeaea;
+  }
+}
+
+input[type="submit"] {
+  margin-left: -50px;
+  outline: none;
+  background: #383838;
+  box-shadow: 0px 5px 14px 0px #383838;
+  border: none;
+  padding: 1em 1em;
+  border-radius: 8px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+
+  &:hover {
+    background: $color-black;
+
+  }
+}
+
+::placeholder {
+  color: #a6a6a6;
+}
+
+//Class selectors
+
+.content {
+  width: 100%;
+  height: 100vh;
+  background-image: $background-image;
+
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 10;
+  color: $color-white;
+}
+
+.content::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  bottom: 0;
+  // background-color: rgba(51, 51, 50, 0.14);
+  background: -webkit-gradient(linear, 50 0%, 50 100%, color-stop(50, transparent), color-stop(100%, rgba(0, 0, 0, 0.2)));
+  z-index: -1;
+}
+
+
+.Navbar {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-right: 2.5em;
+  font-family: $font-raleway;
+}
+
+.Navbar-branch {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  color: black;
+  margin-left: 2em;
+  text-decoration: none;
+  position: relative;
+
+  span {
+    margin-left: 1em;
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+
+  &:hover img {
+    transform: scale(1.1);
+    transition: .8s;
+  }
+}
+
+.Hero {
+  min-height: calc(100vh - 160px);
+  display: grid;
+  grid-template-columns: repeat(2, minmax(50%, 1fr));
+  color: white;
+  position: relative;
+  // opacity: 0;
+}
+
+.Hero__description {
+  width: 80%;
+  text-align: left;
+  text-shadow: 2px 2px #32752a14;
+  justify-self: center;
+  align-self: center;
+}
+
+.Footer {
+  background: $color-black;
+  color: $color-complementary;
+  display: flex;
+  justify-content: space-around;
+  height: 80px;
+  // opacity: 0;
+  position: relative;
+
+  &>div {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  span {
+    font-size: .7em;
+  }
+
+  img {
+    height: 40px;
+  }
+}
+
+// For carousel
+
+.Hero__videos {
+  align-self: center;
+  justify-self: center;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.Hero__video--item {
+  width: 400px;
+  height: 400px;
+  margin: 0em 1em;
+
+
+  &:hover .video__button--play {
+    opacity: 1;
+  }
+
+  &:hover img {
+    transition: 1s;
+    filter: brightness(0.5);
+  }
+
+  &:hover .video__description {
+    transition: 1s;
+    opacity: 1;
+  }
+
+
+}
+
+.video__image {
+  position: relative;
+  width: 100%;
+  box-shadow: 0px 10px 24px 0px rgba(0, 0, 0, 0.5);
+  // filter: saturate(0);
+
+  img {
+    width: 100%;
+  }
+}
+
+.video__title {
+  position: absolute;
+  font-size: 14px;
+  padding: .5em 1.5em;
+  text-transform: capitalize;
+  background: $color-primary;
+  text-align: center;
+  // font-weight: bold;
+  top: 4%;
+  color: $color-black;
+  z-index: 5;
+}
+
+.video__description {
+  position: absolute;
+  z-index: 5;
+  bottom: 5%;
+  left: 5%;
+  width: 80%;
+  color: $color-white;
+  font-size: 20px;
+  font-weight: bolder;
+  opacity: 0;
+}
+
+.video__button--play {
+  transition: 1s;
+  // opacity: 0;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  left: 50%;
+  border: 3px solid $color-white;
+  border-radius: 100%;
+  transform: translate(-50%, -50%);
+
+
+  svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    fill: $color-white;
+    transform: translate(-50%, -50%);
+    width: 25px;
+    height: 25px;
+    margin: auto;
+  }
+}
+
+//gliderjs
+
+.glider-next,
+.glider-prev {
+  position: relative;
+  background: $color-white;
+  top: auto;
+  left: auto;
+
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  margin-top: 20px;
+
+  svg {
+    width: 10px;
+    height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: $color-black;
+    // height: 80%;
+    margin: 0 auto;
+  }
+}
+
+//Mobile Responsive
+
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  .Navbar-branch {
+    margin-left: 1em;
+  }
+
+
+  .Hero {
+    grid-template-columns: 100%;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 160px);
+    display: grid;
+    color: white;
+    position: relative;
+  }
+
+  .Hero__description {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .Hero__videos {
+    position: relative;
+    margin: 1em auto;
+    grid-row: 1;
+  }
+
+
+  button {
+    display: none;
+  }
+
+  form {
+    /* margin: 2em 1em; */
+    width: 100%;
+    margin: 2em auto;
+  }
+
+  input[type="submit"] {
+    display: block;
+    /* box-sizing: content-box; */
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  input[type="text"] {
+    display: block;
+    margin: 0 auto 1em;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+
+  .Hero__video--item {
+    position: relative;
+
+    &:hover .video__button--play {
+      opacity: 1;
+    }
+
+    &:hover img {
+      transition: 1s;
+      filter: brightness(0.5);
+    }
+
+    &:hover .video__description {
+      transition: 1s;
+      opacity: 0;
+    }
+
+
+  }
+
+  .video__title {
+    opacity: 0;
+  }
+
+
+}

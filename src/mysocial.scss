@@ -1,0 +1,34 @@
+.mysocial {
+  position: absolute;
+  top: 7%;
+  right: 2%;
+  display: flex;
+  flex-flow: row;
+  transform: translate(0%, -50%);
+  z-index: 16;
+}
+
+.mysocial a {
+  width: 35px;
+  height: 35px;
+  margin: .5em 0.2em;
+}
+
+.mysocial a:hover {
+  background: #8A8A8A;
+}
+
+.mysocial a:hover svg {
+  fill: #fff;
+}
+
+.mysocial a>svg {
+  width: 100%;
+  height: 100%;
+  padding: .5em;
+  box-sizing: border-box;
+  background: #8a8a8a99;
+
+  fill: #f7f7f7;
+
+}

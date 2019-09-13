@@ -1,0 +1,24 @@
+{
+  "name": "PISOGERENCIAL",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html --public-url ./"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.3",
+    "sass": "^1.22.12"
+  },
+  "dependencies": {
+    "@glidejs/glide": "^3.3.0",
+    "animejs": "^3.1.0",
+    "glider-js": "^1.6.6",
+    "micromodal": "^0.4.2",
+    "normalize.css": "^8.0.1"
+  }
+}
