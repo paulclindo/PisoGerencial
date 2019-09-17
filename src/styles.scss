@@ -16,7 +16,7 @@ sans-serif;
 $font-family-bold: 'Karla',
 sans-serif;
 
-$background-image: url(https://images.pexels.com/photos/2887582/pexels-photo-2887582.jpeg?cs=srgb&dl=airplane-architectural-design-architecture-2887582.jpg&fm=jpg);
+$background-image: url(../assets/bg.jpg);
 
 
 
@@ -86,7 +86,6 @@ input[type="submit"] {
 
   &:hover {
     background: $color-black;
-
   }
 }
 
@@ -104,7 +103,7 @@ input[type="submit"] {
   background-position: center;
   background-size: cover;
   position: relative;
-  z-index: 10;
+  // z-index: 10;
   color: $color-white;
 }
 
@@ -212,6 +211,7 @@ input[type="submit"] {
   width: 400px;
   height: 400px;
   margin: 0em 1em;
+  cursor: pointer;
 
 
   &:hover .video__button--play {
@@ -318,11 +318,28 @@ input[type="submit"] {
   }
 }
 
+.glider-track {
+  margin: 0 auto;
+}
+
+.message {
+  display: block;
+  opacity: 0;
+  color: #DC3545;
+  height: 25px;
+  /* padding: .5em 1.8em; */
+  margin: .8em auto;
+}
+
 //Mobile Responsive
 
 @media only screen and (max-width: 768px) {
   body {
     font-size: 14px;
+  }
+
+  .content {
+    overflow: scroll;
   }
 
   .Navbar-branch {
@@ -334,7 +351,7 @@ input[type="submit"] {
     grid-template-columns: 100%;
     align-items: center;
     justify-content: center;
-    min-height: calc(100vh - 160px);
+    min-height: 70vh;
     display: grid;
     color: white;
     position: relative;
@@ -400,6 +417,8 @@ input[type="submit"] {
   .video__title {
     opacity: 0;
   }
+
+  .Footer {}
 
 
 }

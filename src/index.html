@@ -18,8 +18,9 @@
           <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
         </header>
         <main class="modal__content" id="modal-1-content">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/QD06BvZwZmA" frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe id="player" type="text/html" width="640" height="360"
+            src="http://www.youtube.com/embed/dPJAonqtImo?enablejsapi=1&origin=http://example.com"
+            frameborder="0"></iframe>
         </main>
         <!-- <footer class="modal__footer">
         </footer> -->
@@ -161,8 +162,10 @@
         <p>Recibe noticias y consejos que te ayudarán a mejorar tus finanzas personales en el día a día.</p>
         <form id="formMail">
           <input id="email" type="text" placeholder="Ingresa tu correo electrónico">
-          <input type="submit" value="Suscribirme">
+          <input type="submit" id="sendButton" value="Suscribirme">
+
         </form>
+        <div class="message" id="message"></div>
       </div>
 
       <div class="Hero__videos">
@@ -170,9 +173,7 @@
           <div class="Hero__video--item" data-micromodal-trigger="modal-video-1">
             <div class="video__image">
               <p class="video__title">Episodio 1</p>
-              <img
-                src="https://www.thebalancesmb.com/thmb/LOiSDrf5OQMWDwnZxq9ISksPMUI=/533x400/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-907736222-5bd818fa46e0fb0051685a1b.jpg"
-                alt="">
+              <img src="../assets/mini-1.png" alt="">
               <div class="video__button--play">
                 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 41.999 41.999"
@@ -188,7 +189,7 @@
             </div>
           </div>
 
-          <div class="Hero__video--item" data-micromodal-trigger="modal-video-1">
+          <!-- <div class="Hero__video--item" data-micromodal-trigger="modal-video-1">
             <p class="video__title">Episodio 2</p>
             <div class="video__image">
               <img
@@ -208,30 +209,9 @@
               <p class="video__description">Factoring:Impulsando tu bienestar financiero </p>
             </div>
 
-          </div>
-          <div class="Hero__video--item" data-micromodal-trigger="modal-video-1">
-            <p class="video__title">Episodio 3</p>
-            <div class="video__image">
-              <img
-                src="https://www.thebalancesmb.com/thmb/LOiSDrf5OQMWDwnZxq9ISksPMUI=/533x400/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-907736222-5bd818fa46e0fb0051685a1b.jpg"
-                alt="">
-              <div class="video__button--play">
-                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 41.999 41.999"
-                  style="enable-background:new 0 0 41.999 41.999;" xml:space="preserve">
-                  <path d="M36.068,20.176l-29-20C6.761-0.035,6.363-0.057,6.035,0.114C5.706,0.287,5.5,0.627,5.5,0.999v40
-	c0,0.372,0.206,0.713,0.535,0.886c0.146,0.076,0.306,0.114,0.465,0.114c0.199,0,0.397-0.06,0.568-0.177l29-20
-	c0.271-0.187,0.432-0.494,0.432-0.823S36.338,20.363,36.068,20.176z" />
-                  <g>
-                  </g>
-                </svg>
-              </div>
-              <p class="video__description">Factoring:Impulsando tu bienestar financiero </p>
-            </div>
-
-          </div>
+          </div> -->
         </div>
-        <button role="button" aria-label="Previous" class="glider-prev">
+        <!-- <button role="button" aria-label="Previous" class="glider-prev">
           <svg viewBox="0 0 13 21" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M0.514761 10.4999C0.514761 10.1236 0.658464 9.74726 0.945267 9.46032L9.97489 0.430797C10.5493 -0.143599 11.4806 -0.143599 12.0547 0.430797C12.6289 1.00496 12.6289 1.93606 12.0547 2.5105L4.06482 10.4999L12.0544 18.4894C12.6286 19.0638 12.6286 19.9948 12.0544 20.5689C11.4803 21.1436 10.549 21.1436 9.97461 20.5689L0.944988 11.5396C0.658138 11.2525 0.514761 10.8762 0.514761 10.4999Z"
@@ -244,7 +224,7 @@
               d="M12.4854 10.5001C12.4854 10.8764 12.3416 11.2527 12.0548 11.5397L3.02523 20.5692C2.45083 21.1436 1.51955 21.1436 0.945385 20.5692C0.371222 19.995 0.371222 19.0639 0.945385 18.4895L8.93529 10.5001L0.945665 2.51057C0.371501 1.93617 0.371501 1.00517 0.945665 0.431053C1.51983 -0.143622 2.45111 -0.143622 3.02551 0.431053L12.0551 9.46044C12.342 9.74752 12.4854 10.1238 12.4854 10.5001Z"
               fill="#6A707E" />
           </svg>
-        </button>
+        </button> -->
       </div>
     </main>
     <footer class="Footer">
