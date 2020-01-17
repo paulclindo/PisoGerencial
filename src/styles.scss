@@ -83,6 +83,7 @@ input[type="submit"] {
   color: white;
   font-weight: 700;
   cursor: pointer;
+  width: 29%;
 
   &:hover {
     background: $color-black;
@@ -164,7 +165,7 @@ input[type="submit"] {
 }
 
 .Hero__description {
-  width: 80%;
+  width: 85%;
   text-align: left;
   text-shadow: 2px 2px #32752a14;
   justify-self: center;
@@ -208,8 +209,8 @@ input[type="submit"] {
 }
 
 .Hero__video--item {
-  width: 400px;
-  height: 400px;
+  // width: 400px;
+  // height: 400px;
   margin: 0em 1em;
   cursor: pointer;
 
@@ -239,6 +240,7 @@ input[type="submit"] {
 
   img {
     width: 100%;
+    height: 250px;
   }
 }
 
@@ -260,7 +262,7 @@ input[type="submit"] {
   z-index: 5;
   bottom: 5%;
   left: 5%;
-  width: 80%;
+  width: 90%;
   color: $color-white;
   font-size: 20px;
   font-weight: bolder;
@@ -327,7 +329,6 @@ input[type="submit"] {
   opacity: 0;
   color: #DC3545;
   height: 25px;
-  /* padding: .5em 1.8em; */
   margin: .8em auto;
 }
 
@@ -418,7 +419,6 @@ input[type="submit"] {
     opacity: 0;
   }
 
-  .Footer {}
 
 
 }

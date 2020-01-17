@@ -1,0 +1,46 @@
+{
+  "episodes": [{
+      "id": 1,
+      "title": "Episodio 1",
+      "description": "Factoring:Impulsando tu bienestar financiero ",
+      "url": "https://www.youtube.com/embed/dPJAonqtImo",
+      "img": "https://pisogerencial.tv/mini-videos/mini-factoring.png"
+
+    },
+    {
+      "id": 2,
+      "title": "Episodio 2",
+      "description": "¿Quiénes son los nuevos obligados a emitir Facturación Electrónica? ",
+      "url": "https://www.youtube.com/embed/YKtMy6fck4A",
+      "img": "https://pisogerencial.tv/mini-videos/mini-facturacion-electronica.png"
+    },
+    {
+      "id": 3,
+      "title": "Episodio 3",
+      "description": "Tips para la fuerza de venta en el sector de consumo masivo",
+      "url": "https://www.youtube.com/embed/LSI7K4Hs2QM",
+      "img": "https://pisogerencial.tv/mini-videos/mini-equipo-campo.png"
+    },
+    {
+      "id": 4,
+      "title": "Episodio 4",
+      "description": "Relanzamiento de Ley de Beneficios Tributarios",
+      "url": "https://www.youtube.com/embed/yCPj7ZD-x9M",
+      "img": "https://pisogerencial.tv/mini-videos/mini-ley-beneficios.png"
+    },
+    {
+      "id": 5,
+      "title": "Episodio 5",
+      "description": "Oportunidades de inversión con el crowdfunding",
+      "url": "https://www.youtube.com/embed/IgwGHteBoUc",
+      "img": "https://pisogerencial.tv/mini-videos/mini-inversion-crowdfounding.png"
+    },
+    {
+      "id": 6,
+      "title": "Episodio 6",
+      "description": "Obligaciones en prevención y sanción del hostigamiento sexual en el trabajo",
+      "url": "https://www.youtube.com/embed/SwFD4bxdQa8",
+      "img": "https://pisogerencial.tv/mini-videos/mini-hostigamiento-sexual.png"
+    }
+  ]
+}

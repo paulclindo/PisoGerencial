@@ -7,6 +7,9 @@
   z-index: 99;
   background: white;
   opacity: 1;
+  overflow: hidden;
+  /* visibility: hidden; */
+
 }
 
 .loader svg {
@@ -30,7 +33,7 @@
   }
 }
 
-/* .content {
+.content {
   background-position: center;
   background-size: cover;
   position: relative;
@@ -38,5 +41,5 @@
   overflow: hidden;
   mix-blend-mode: multiply;
   opacity: 0;
-  transition: opacity 1s;
-} */
+  transition: opacity .7s;
+}
